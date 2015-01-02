@@ -1,0 +1,8 @@
+---
+project:
+  name: manchester-iww
+  root: /var/www/manchester-iww
+  repo: https://github.com/supervacuo/manchester-iww.git
+  domain: manchesteriww.org.uk
+
+virtualenv: "{{ project.root }}/venv"

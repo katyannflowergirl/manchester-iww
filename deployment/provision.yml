@@ -1,0 +1,17 @@
+---
+- hosts: all
+  sudo: True
+  vars_files:
+    - ~/Projects/ansible/vars/defaults.yml
+    - vars.yml
+  roles:
+    - nginx 
+  tasks:
+   - name: project | root | create
+     file: path={{ project.root }} state=directory owner=nginx group=nginx
+
+   - name: nginx | config | copy
+     template:
+       src: "etc%nginx%conf.d%manchesteriww.conf" 
+       dest: "/etc/nginx/conf.d/manchesteriww.conf"
+     notify: restart nginx

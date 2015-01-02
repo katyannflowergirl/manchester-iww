@@ -1,0 +1,23 @@
+---
+- hosts: all
+  sudo: True
+  vars_files:
+    - ~/Projects/ansible/vars/defaults.yml
+    - vars.yml
+  tasks:
+   - name: project | checkout
+     git: >
+       repo={{ project.repo }}
+       dest={{ project.root }}
+
+   - name: project | root | check permissions
+     file:
+       path: "{{ project.root }}"
+       state: directory
+       recurse: yes
+       owner: nginx
+       group: nginx
+
+   - name: selinux | restorecon
+     command: restorecon -R {{ selfoss.root }}
+     when: ansible_selinux.status == "enabled"
