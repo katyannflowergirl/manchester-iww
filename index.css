@@ -1,0 +1,278 @@
+body {
+  width: 100%;
+  *zoom: 1;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+@font-face {
+  font-family: 'Istok Web';
+  font-style: normal;
+  font-weight: 700;
+  src: local('/fnt/Istok Web Bold'), local('/fnt/IstokWeb-Bold'), url("/fnt/Istok_700.ttf") format('truetype');
+}
+@font-face {
+  font-family: 'Alegreya Sans SC';
+  font-style: normal;
+  font-weight: 800;
+  src: local('/fnt/Alegreya Sans SC ExtraBold'), local('/fnt/AlegreyaSansSC-ExtraBold'), url("/fnt/Alegreya_800.ttf") format('truetype');
+}
+html {
+  font-family: 'Lucida Grande', Verdana, Geneva, Arial, sans-serif;
+  font-size: 16px;
+}
+h1 {
+  font-size: 3.75em;
+  line-height: 1;
+  margin: 0.3333333333333333em 0;
+  text-transform: uppercase;
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+h2 {
+  font-size: 1.15em;
+  line-height: 1.0869565217391306;
+  margin: 1.0869565217391306em 0;
+  font-family: 'Istok Web', sans-serif;
+  letter-spacing: -0.02em;
+}
+h3 {
+  font-size: 1.95em;
+  line-height: 1.2820512820512822;
+  margin: 0.6410256410256411em 0;
+  font-family: 'Istok Web', sans-serif;
+  text-transform: lowercase;
+}
+p,
+li {
+  font-size: 16px;
+  line-height: 1.25;
+  margin: 1.25em 0;
+}
+a {
+  text-decoration: none;
+  color: #900;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #121212 url("/img/zwartevilt.png");
+  color: #121212;
+  padding-bottom: 3.75em;
+  position: relative;
+}
+div#wrapper {
+  width: 600px;
+  margin: 6.25em auto 0 auto;
+}
+div#wrapper nav#main {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 580px;
+  margin: 0 10px;
+  *width: 580px -correction;
+  *margin: 0 10px -correction;
+  background-color: rgba(113,113,113,0.5);
+}
+div#wrapper nav#main ul {
+  display: table;
+  margin: 0 auto;
+  color: #c8c8c8;
+}
+div#wrapper nav#main ul li {
+  display: table-cell;
+  padding: 0.625em 0;
+  text-transform: lowercase;
+/* &:before
+					content: "\2008\2014\2009"
+				&:first-child:before
+					content: "" */
+}
+div#wrapper nav#main ul li a {
+  color: #c8c8c8;
+}
+div#wrapper nav#main ul li:before {
+  content: "\2008/ ";
+}
+div#wrapper nav#main ul li:first-child:before {
+  content: none;
+}
+div#wrapper header {
+  text-align: center;
+  background: #fafafa;
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 580px;
+  margin: 0 10px;
+  *width: 580px -correction;
+  *margin: 0 10px -correction;
+}
+div#wrapper header p {
+  font-style: italic;
+}
+div#wrapper header p:before {
+  content: "\2013\2009";
+}
+div#wrapper header p:after {
+  content: "\2009\2013";
+}
+div#wrapper header #logo {
+  display: inline-block;
+  text-indent: -99999px;
+  background: transparent url("/img/logo.png") no-repeat;
+  width: 285px;
+  height: 285px;
+}
+div#wrapper header a {
+  color: #4d0000;
+}
+div#wrapper section {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 580px;
+  margin: 0 10px;
+  *width: 580px -correction;
+  *margin: 0 10px -correction;
+  background: #fafafa;
+  margin-top: 3.75em;
+}
+div#wrapper section#meetings {
+  background-image: url("/img/manchester_map.png");
+}
+div#wrapper section#contact {
+  background-image: url("/img/los_Wobblies_de_Chile.jpg");
+}
+div#wrapper section#links {
+  background-image: url("/img/no_war_but_the_class_war.jpg");
+}
+div#wrapper section h3 {
+  padding: 0 0.6410256410256411em;
+}
+div#wrapper section p {
+  padding: 0 1.25em;
+}
+div#wrapper section ul {
+  list-style-type: disc;
+  padding: 0 1.25em;
+  margin: 1.25em 1.25em;
+}
+div#wrapper section ul li {
+  margin: 0;
+}
+div#wrapper section nav.top {
+  width: 100%;
+  text-align: right;
+  background-color: rgba(150,150,150,0.5);
+  font-style: italic;
+  font-size: 0.75em;
+  line-height: 1.6666666666666667;
+}
+div#wrapper section nav.top a {
+  display: inline-block;
+  margin: 0.234375em 1.6666666666666667em;
+}
+p#copyright {
+  position: absolute;
+  right: 1.25em;
+  bottom: 0;
+  color: #fafafa;
+  font-size: 0.75em;
+}
