@@ -19,5 +19,5 @@
        group: nginx
 
    - name: selinux | restorecon
-     command: restorecon -R {{ selfoss.root }}
+     command: restorecon -R {{ project.root }}
      when: ansible_selinux.status == "enabled"
