@@ -105,13 +105,13 @@ a img {
   font-family: 'Istok Web';
   font-style: normal;
   font-weight: 700;
-  src: local('/fnt/Istok Web Bold'), local('/fnt/IstokWeb-Bold'), url("/fnt/Istok_700.ttf") format('truetype');
+  src: local('fnt/Istok Web Bold'), local('fnt/IstokWeb-Bold'), url("fnt/Istok_700.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Alegreya Sans SC';
   font-style: normal;
   font-weight: 800;
-  src: local('/fnt/Alegreya Sans SC ExtraBold'), local('/fnt/AlegreyaSansSC-ExtraBold'), url("/fnt/Alegreya_800.ttf") format('truetype');
+  src: local('fnt/Alegreya Sans SC ExtraBold'), local('fnt/AlegreyaSansSC-ExtraBold'), url("fnt/Alegreya_800.ttf") format('truetype');
 }
 html {
   font-family: 'Lucida Grande', Verdana, Geneva, Arial, sans-serif;
@@ -120,21 +120,21 @@ html {
 h1 {
   font-size: 3.75em;
   line-height: 1;
-  margin: 0.3333333333333333em 0;
+  margin: 0.333333333333333em 0;
   text-transform: uppercase;
   font-family: 'Alegreya Sans SC', sans-serif;
 }
 h2 {
   font-size: 1.15em;
-  line-height: 1.0869565217391306;
-  margin: 1.0869565217391306em 0;
+  line-height: 1.086956521739131;
+  margin: 1.086956521739131em 0;
   font-family: 'Istok Web', sans-serif;
   letter-spacing: -0.02em;
 }
 h3 {
   font-size: 1.95em;
-  line-height: 1.2820512820512822;
-  margin: 0.6410256410256411em 0;
+  line-height: 1.282051282051282;
+  margin: 0.641025641025641em 0;
   font-family: 'Istok Web', sans-serif;
   text-transform: lowercase;
 }
@@ -151,7 +151,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background: #121212 url("/img/zwartevilt.png");
+  background: #121212 url("img/zwartevilt.png");
   color: #121212;
   padding-bottom: 3.75em;
   position: relative;
@@ -164,10 +164,10 @@ div#wrapper nav#main {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 580px;
-  margin: 0 10px;
-  *width: 580px -correction;
-  *margin: 0 10px -correction;
+  width: 580.0000000000002px;
+  margin: 0 10.000000000000199px;
+  *width: 580.0000000000002px -correction;
+  *margin: 0 10.000000000000199px -correction;
   background-color: rgba(113,113,113,0.5);
 }
 div#wrapper nav#main ul {
@@ -199,10 +199,10 @@ div#wrapper header {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 580px;
-  margin: 0 10px;
-  *width: 580px -correction;
-  *margin: 0 10px -correction;
+  width: 580.0000000000002px;
+  margin: 0 10.000000000000199px;
+  *width: 580.0000000000002px -correction;
+  *margin: 0 10.000000000000199px -correction;
 }
 div#wrapper header p {
   font-style: italic;
@@ -216,7 +216,7 @@ div#wrapper header p:after {
 div#wrapper header #logo {
   display: inline-block;
   text-indent: -99999px;
-  background: transparent url("/img/logo.png") no-repeat;
+  background: transparent url("img/logo.png") no-repeat;
   width: 285px;
   height: 285px;
 }
@@ -227,24 +227,24 @@ div#wrapper section {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 580px;
-  margin: 0 10px;
-  *width: 580px -correction;
-  *margin: 0 10px -correction;
+  width: 580.0000000000002px;
+  margin: 0 10.000000000000199px;
+  *width: 580.0000000000002px -correction;
+  *margin: 0 10.000000000000199px -correction;
   background: #fafafa;
   margin-top: 3.75em;
 }
 div#wrapper section#meetings {
-  background-image: url("/img/manchester_map.png");
+  background-image: url("img/manchester_map.png");
 }
 div#wrapper section#contact {
-  background-image: url("/img/los_Wobblies_de_Chile.jpg");
+  background-image: url("img/los_Wobblies_de_Chile.jpg");
 }
 div#wrapper section#links {
-  background-image: url("/img/no_war_but_the_class_war.jpg");
+  background-image: url("img/no_war_but_the_class_war.jpg");
 }
 div#wrapper section h3 {
-  padding: 0 0.6410256410256411em;
+  padding: 0 0.641025641025641em;
 }
 div#wrapper section p {
   padding: 0 1.25em;
@@ -263,11 +263,11 @@ div#wrapper section nav.top {
   background-color: rgba(150,150,150,0.5);
   font-style: italic;
   font-size: 0.75em;
-  line-height: 1.6666666666666667;
+  line-height: 1.666666666666667;
 }
 div#wrapper section nav.top a {
   display: inline-block;
-  margin: 0.234375em 1.6666666666666667em;
+  margin: 0.234375em 1.666666666666667em;
 }
 p#copyright {
   position: absolute;

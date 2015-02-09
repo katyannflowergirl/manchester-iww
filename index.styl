@@ -29,13 +29,13 @@ $red = rgb(153, 0, 0)
 	font-family:'Istok Web';
 	font-style: normal;
 	font-weight: 700
-	src: local('/fnt/Istok Web Bold'),local('/fnt/IstokWeb-Bold'),url(/fnt/Istok_700.ttf) format('truetype')
+	src: local('fnt/Istok Web Bold'),local('fnt/IstokWeb-Bold'),url(fnt/Istok_700.ttf) format('truetype')
 
 @font-face 
 	font-family:'Alegreya Sans SC'
 	font-style: normal
 	font-weight: 800
-	src: local('/fnt/Alegreya Sans SC ExtraBold'),local('/fnt/AlegreyaSansSC-ExtraBold'),url(/fnt/Alegreya_800.ttf) format('truetype')
+	src: local('fnt/Alegreya Sans SC ExtraBold'),local('fnt/AlegreyaSansSC-ExtraBold'),url(fnt/Alegreya_800.ttf) format('truetype')
 
 html
 	font-family: 'Lucida Grande', Verdana, Geneva, Arial, sans-serif
@@ -74,7 +74,7 @@ a
 body
 	margin: 0
 	padding: 0
-	background: $black url(/img/zwartevilt.png)
+	background: $black url(img/zwartevilt.png)
 	color: $black
 	padding-bottom: unit($row_ratio * 3, 'em')
 	position: relative
@@ -121,7 +121,7 @@ div#wrapper
 		#logo
 			display: inline-block
 			text-indent: -99999px
-			background: transparent url(/img/logo.png) no-repeat
+			background: transparent url(img/logo.png) no-repeat
 			width: 285px
 			height: 285px
 
@@ -134,13 +134,13 @@ div#wrapper
 		margin-top: unit($row_ratio * 3, 'em')
 
 		&#meetings
-			background-image: url(/img/manchester_map.png)
+			background-image: url(img/manchester_map.png)
 
 		&#contact
-			background-image: url(/img/los_Wobblies_de_Chile.jpg)
+			background-image: url(img/los_Wobblies_de_Chile.jpg)
 
 		&#links
-			background-image: url(/img/no_war_but_the_class_war.jpg)
+			background-image: url(img/no_war_but_the_class_war.jpg)
 
 		h3
 			padding: 0 unit($row_ratio / $larger, 'em')
