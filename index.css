@@ -160,6 +160,7 @@ div#wrapper {
   width: 600px;
   margin: 6.25em auto 0 auto;
 }
+div#wrapper nav#page,
 div#wrapper nav#main {
   display: inline;
   float: left;
@@ -168,13 +169,14 @@ div#wrapper nav#main {
   margin: 0 10.000000000000199px;
   *width: 580.0000000000002px -correction;
   *margin: 0 10.000000000000199px -correction;
-  background-color: rgba(113,113,113,0.5);
 }
+div#wrapper nav#page ul,
 div#wrapper nav#main ul {
   display: table;
   margin: 0 auto;
   color: #c8c8c8;
 }
+div#wrapper nav#page ul li,
 div#wrapper nav#main ul li {
   display: table-cell;
   padding: 0.625em 0;
@@ -182,16 +184,31 @@ div#wrapper nav#main ul li {
 /* &:before
 					content: "\2008\2014\2009"
 				&:first-child:before
-					content: "" */
+					content: ""*/
 }
+div#wrapper nav#page ul li a,
 div#wrapper nav#main ul li a {
   color: #c8c8c8;
 }
-div#wrapper nav#main ul li:before {
-  content: "\2008/ ";
-}
+div#wrapper nav#page ul li:first-child:before,
 div#wrapper nav#main ul li:first-child:before {
   content: none;
+}
+div#wrapper nav#main {
+  background-color: rgba(42,42,42,0.5);
+}
+div#wrapper nav#main ul li {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+div#wrapper nav#main ul li:before {
+  content: "\2008\2014 ";
+}
+div#wrapper nav#page {
+  background-color: rgba(113,113,113,0.5);
+}
+div#wrapper nav#page ul li:before {
+  content: "\2008/ ";
 }
 div#wrapper header {
   text-align: center;
