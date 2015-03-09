@@ -110,6 +110,10 @@ div#wrapper
 			font-weight: bold
 			&:before
 				content: "\2008\2014 "
+			&.active a, a.active
+				color: lighten($black, 20%)
+				&.inactive
+					color: darken($white, 20%)
 
 	nav#page
 		background-color: rgba(lighten($black, 40%), 0.5)
@@ -129,12 +133,20 @@ div#wrapper
 			&:after
 				content: "\2009\2013"
 
-		#logo
+		#logo, #logo_mhw
 			display: inline-block
 			text-indent: -99999px
-			background: transparent url(img/logo.png) no-repeat
+			background: transparent none no-repeat
+
+		#logo
+			background-image: url(img/logo.png)
 			width: 285px
 			height: 285px
+
+		#logo_mhw
+			background-image: url(img/logo_mhw.png)
+			width: 388px
+			height: 388px
 
 		a
 			color: darken($red, 50%)

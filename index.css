@@ -204,6 +204,14 @@ div#wrapper nav#main ul li {
 div#wrapper nav#main ul li:before {
   content: "\2008\2014 ";
 }
+div#wrapper nav#main ul li.active a,
+div#wrapper nav#main ul li a.active {
+  color: #414141;
+}
+div#wrapper nav#main ul li.active a.inactive,
+div#wrapper nav#main ul li a.active.inactive {
+  color: #c8c8c8;
+}
 div#wrapper nav#page {
   background-color: rgba(113,113,113,0.5);
 }
@@ -230,12 +238,21 @@ div#wrapper header p:before {
 div#wrapper header p:after {
   content: "\2009\2013";
 }
-div#wrapper header #logo {
+div#wrapper header #logo,
+div#wrapper header #logo_mhw {
   display: inline-block;
   text-indent: -99999px;
-  background: transparent url("img/logo.png") no-repeat;
+  background: transparent none no-repeat;
+}
+div#wrapper header #logo {
+  background-image: url("img/logo.png");
   width: 285px;
   height: 285px;
+}
+div#wrapper header #logo_mhw {
+  background-image: url("img/logo_mhw.png");
+  width: 388px;
+  height: 388px;
 }
 div#wrapper header a {
   color: #4d0000;
