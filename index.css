@@ -1,3 +1,4 @@
+<style>
 body {
   width: 100%;
   *zoom: 1;
@@ -182,7 +183,7 @@ div#wrapper nav#main ul li {
   padding: 0.625em 0;
   text-transform: lowercase;
 /* &:before
-					content: "\2008\2014\2009"
+  				content: "\2008\2014\2009"
 				&:first-child:before
 					content: ""*/
 }
@@ -310,3 +311,77 @@ p#copyright {
   color: #fafafa;
   font-size: 0.75em;
 }
+
+/*This bit is for the top menu and super cool drop down box*/
+/*Put "Manchester IWW above menu?*/
+/*Need to sort out the menu size, and font*/
+.menu ul li {
+  text-transform: uppercase;
+  font-weight: bold
+  color:#dedede;
+}
+.menu a {
+  color:#c8c8c8
+  }
+.menu a{
+  font-family:'Lucida Grande'}
+.menu{
+  background-color: rgba(42,42,42,0.5);}
+  
+.menu > ul > li {
+    float:center;
+    display:inline-block;
+    position:relative;
+    font-size:21px;
+    
+    
+}
+ 
+.menu > ul > li > a {
+    padding:5px 5px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu > ul > li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+
+.menu li:hover .sub-menu {
+    z-index:1;
+    opacity:1;
+}
+ 
+.sub-menu {
+    width:100%;
+    padding:5px 0px;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    opacity:0;
+    transition:opacity linear 1.0s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#959595;
+
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:5px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+</style>
